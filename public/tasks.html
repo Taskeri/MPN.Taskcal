@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>לוח משימות | MPN Tasks</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="appbar">
+    <div class="brand">MPN Tasks</div>
+    <div class="user"><span id="hello"></span> <button id="logout" class="link">התנתק</button></div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>המשימות שלי</h2>
+      <div id="guard" class="muted"></div>
+      <div id="list" class="grid"></div>
+    </section>
+  </main>
+
+  <template id="taskTpl">
+    <div class="task-card">
+      <div class="head">
+        <div class="proj"></div>
+        <div class="status chip"></div>
+      </div>
+      <div class="desc"></div>
+      <div class="meta">
+        <div><b>שלב:</b> <span class="stage"></span></div>
+        <div><b>כמות דרושה:</b> <span class="qtyReq"></span></div>
+        <div><b>כמות בוצע:</b> <span class="qtyDone"></span></div>
+        <div><b>תחילה:</b> <span class="start"></span></div>
+      </div>
+      <div class="actions">
+        <button class="primary start">התחל</button>
+        <a class="ghost" target="_self">פתיחה</a>
+      </div>
+    </div>
+  </template>
+
+  <script src="js/tasks.js"></script>
+</body>
+</html>

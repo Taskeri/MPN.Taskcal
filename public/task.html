@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>משימה | MPN Tasks</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="appbar">
+    <div class="brand">MPN Tasks</div>
+    <a class="link" href="tasks.html">⬅ חזרה</a>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2 id="title">משימה</h2>
+      <div id="meta" class="meta"></div>
+
+      <div class="stack">
+        <label>כמות שבוצעה
+          <input id="qty" type="number" min="0" step="1" value="0" />
+        </label>
+        <label>הערות
+          <textarea id="notes" rows="3" placeholder="אופציונלי"></textarea>
+        </label>
+      </div>
+
+      <div class="actions">
+        <button id="btnStart" class="primary">התחל</button>
+        <button id="btnSaveQty" class="ghost">עדכן כמות</button>
+        <button id="btnDone" class="danger">סיום</button>
+      </div>
+
+      <p id="msg" class="muted"></p>
+    </section>
+  </main>
+
+  <script src="js/task.js"></script>
+</body>
+</html>

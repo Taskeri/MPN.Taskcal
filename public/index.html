@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>כניסה | MPN Tasks</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1>כניסה למערכת</h1>
+      <form id="loginForm" class="stack">
+        <label>שם משתמש
+          <input id="username" required autocomplete="username" />
+        </label>
+        <label>סיסמה
+          <input id="password" type="password" required autocomplete="current-password" />
+        </label>
+        <button type="submit">התחבר</button>
+        <p id="msg" class="muted"></p>
+      </form>
+    </section>
+  </main>
+  <script src="js/login.js"></script>
+</body>
+</html>
